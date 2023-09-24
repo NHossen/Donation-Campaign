@@ -1,17 +1,17 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
     return (
         <div>
-           <div className="flex justify-between px-24 my-4 ">
+           <div className="flex justify-between px-24 my-4 items-center ">
                 <div>
-                    <h1>Logo</h1>
+                    <img src="./Logo.png" alt="" />
                 </div>
-                <ul className="flex gap-4">
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/donation'>Donation</Link></li>
-                    <li><Link to='/statistics'>Statistics</Link></li>
+                <ul className="flex gap-4 font-semibold">
+                    <li><NavLink className={({ isActive,isPending})=>isPending? "pending" :isActive ? "text-red-600 underline" : ""} to='/'>Home</NavLink></li>
+                    <li><NavLink className={({ isActive,isPending})=>isPending? "pending" :isActive ? "text-red-600 underline" : ""} to='/donation'>Donation</NavLink></li>
+                    <li><NavLink className={({ isActive,isPending})=>isPending? "pending" :isActive ? "text-red-600 underline" : ""} to='/statistics'>Statistics</NavLink></li>
                 </ul>
           </div>
         </div>
