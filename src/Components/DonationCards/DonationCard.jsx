@@ -9,9 +9,10 @@ const DonationCard = ({data}) => {
             <Link to={`/donation/${id}`}>
             
             <div >
-                <div style={{backgroundColor:bgColor}} className=" w-72  rounded-lg h-72 shadow-md hover:shadow-xl">
-                    <div className="lg:w-72   rounded-lg ">
+                <div style={{backgroundColor:bgColor}} className="-ml-8 lg:-ml-0 w-[300px]  rounded-lg h-72 shadow-md hover:shadow-xl">
+                    <div className="   rounded-lg ">
                         <img className="h-48" src={image} alt="" />
+                       
                     </div>
                     <div className="p-5">
                         <h1 style={{backgroundColor:btnBg,color:btnText}} className="font-medium w-24 text-center rounded-lg py-[6px]">{categories}</h1>
